@@ -105,7 +105,7 @@ export class AppComponent {
 
   private findLowestDivisible(num: number): number | undefined {
     // only check primes to avoid some redundancy
-    const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 25, 29, 31, 35, 37, 41, 43, 47, 49];
+    const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47];
     let lowest: number = 0;
     for (const prime of primes) {
       if (num % prime === 0) {
